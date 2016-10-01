@@ -17,6 +17,7 @@ def translate(input)
             word = word.downcase
             @capital_word = true
         end
+        #test if a string's first character is capitalized
         
         word.length.times do |x|
             if word[x].start_with?("a", "e", "i", "o", "u") == false
@@ -44,6 +45,7 @@ def translate(input)
         if @capital_word
             @pig_word = @pig_word.downcase.capitalize
         end
+        #if the string was capitalized, it capitalizes the translated string
         
         pig_latin << @pig_word
 
